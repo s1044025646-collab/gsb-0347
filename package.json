@@ -1,0 +1,23 @@
+{
+  "name": "bg6-bearing-off",
+  "version": "1.0.0",
+  "description": "双陆棋六点残局用骰与离盘路径后端（仅 API 与 CLI）",
+  "type": "module",
+  "bin": {
+    "bg6": "dist/cli.js"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test --experimental-strip-types tests/engine.test.ts tests/store.test.ts",
+    "start": "node --experimental-strip-types src/cli.ts serve",
+    "demo": "node --experimental-strip-types src/cli.ts demo"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=23.6.0"
+  }
+}
