@@ -1,0 +1,17 @@
+{
+  "name": "sixpoint-bearoff",
+  "version": "1.0.0",
+  "private": true,
+  "description": "双陆棋六点残局用骰与离盘路径后端（API + CLI）",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/demo.js",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
